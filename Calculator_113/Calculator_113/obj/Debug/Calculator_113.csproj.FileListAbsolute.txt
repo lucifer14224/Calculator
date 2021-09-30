@@ -8,3 +8,13 @@ C:\Users\class\Desktop\.vs\Project\Calculator_113\Calculator_113\bin\Debug\Calcu
 C:\Users\class\Desktop\.vs\Project\Calculator_113\Calculator_113\bin\Debug\Calculator_113.pdb
 C:\Users\class\Desktop\.vs\Project\Calculator_113\Calculator_113\obj\Debug\Calculator_113.exe
 C:\Users\class\Desktop\.vs\Project\Calculator_113\Calculator_113\obj\Debug\Calculator_113.pdb
+C:\Users\lacakp\Documents\GitHub\Calculator\Calculator_113\Calculator_113\bin\Debug\Calculator_113.exe.config
+C:\Users\lacakp\Documents\GitHub\Calculator\Calculator_113\Calculator_113\bin\Debug\Calculator_113.exe
+C:\Users\lacakp\Documents\GitHub\Calculator\Calculator_113\Calculator_113\bin\Debug\Calculator_113.pdb
+C:\Users\lacakp\Documents\GitHub\Calculator\Calculator_113\Calculator_113\obj\Debug\Calculator_113.csproj.AssemblyReference.cache
+C:\Users\lacakp\Documents\GitHub\Calculator\Calculator_113\Calculator_113\obj\Debug\Calculator_113.Form1.resources
+C:\Users\lacakp\Documents\GitHub\Calculator\Calculator_113\Calculator_113\obj\Debug\Calculator_113.Properties.Resources.resources
+C:\Users\lacakp\Documents\GitHub\Calculator\Calculator_113\Calculator_113\obj\Debug\Calculator_113.csproj.GenerateResource.cache
+C:\Users\lacakp\Documents\GitHub\Calculator\Calculator_113\Calculator_113\obj\Debug\Calculator_113.csproj.CoreCompileInputs.cache
+C:\Users\lacakp\Documents\GitHub\Calculator\Calculator_113\Calculator_113\obj\Debug\Calculator_113.exe
+C:\Users\lacakp\Documents\GitHub\Calculator\Calculator_113\Calculator_113\obj\Debug\Calculator_113.pdb

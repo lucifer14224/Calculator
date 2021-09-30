@@ -21,11 +21,6 @@ namespace Calculator_113
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void NumEvent(object sender, EventArgs e)
         {
             if (txtResult.Text == "0" || operandPerformed)
@@ -34,7 +29,6 @@ namespace Calculator_113
             Button btn = (Button)sender;
             txtResult.Text += btn.Text;
             operandPerformed = false;
-
         }
 
         private void OperandEvent(object sender, EventArgs e)
@@ -44,17 +38,27 @@ namespace Calculator_113
             string newOperand = btn.Text;
 
             lbResult.Text = lbResult.Text + " " + txtResult.Text + " " + newOperand;
+            double Opr1 = Convert.ToDouble(result);
+            double Opr2 = Convert.ToDouble(txtResult.Text);
 
             switch (operand)
             {
-                case "+": txtResult.Text = (result + Double.Parse(txtResult.Text)).ToString(); break;
-                case "-": txtResult.Text = (result - Double.Parse(txtResult.Text)).ToString(); break;
-                case "*": txtResult.Text = (result * Double.Parse(txtResult.Text)).ToString(); break;
-                case "/": txtResult.Text = (result / Double.Parse(txtResult.Text)).ToString(); break;
+                case "+":
+                    txtResult.Text =  Convert.ToString( Opr1 + Opr2 ); 
+                    break;
+                case "-": 
+                    txtResult.Text = Convert.ToString( Opr1 - Opr2 ); 
+                    break;
+                case "*": 
+                    txtResult.Text = Convert.ToString( Opr1 * Opr2 ); 
+                    break;
+                case "/": 
+                    txtResult.Text = Convert.ToString( Opr1 / Opr2 ); 
+                    break;
                 default: break;
             }
 
-            result = Double.Parse(txtResult.Text);
+            result = Convert.ToDouble(txtResult.Text);
             operand = newOperand;
         }
 
@@ -75,17 +79,27 @@ namespace Calculator_113
         {
             lbResult.Text = "";
             operandPerformed = true;
+            double Opr1 = Convert.ToDouble(result);
+            double Opr2 = Convert.ToDouble(txtResult.Text);
 
             switch (operand)
             {
-                case "+": txtResult.Text = (result + Double.Parse(txtResult.Text)).ToString(); break;
-                case "-": txtResult.Text = (result - Double.Parse(txtResult.Text)).ToString(); break;
-                case "*": txtResult.Text = (result * Double.Parse(txtResult.Text)).ToString(); break;
-                case "/": txtResult.Text = (result / Double.Parse(txtResult.Text)).ToString(); break;
+                case "+":
+                    txtResult.Text = Convert.ToString(Opr1 + Opr2);
+                    break;
+                case "-":
+                    txtResult.Text = Convert.ToString(Opr1 - Opr2);
+                    break;
+                case "*":
+                    txtResult.Text = Convert.ToString(Opr1 * Opr2);
+                    break;
+                case "/":
+                    txtResult.Text = Convert.ToString(Opr1 / Opr2);
+                    break;
                 default: break;
             }
 
-            result = Double.Parse(txtResult.Text);
+            result = Convert.ToDouble(txtResult.Text);
             txtResult.Text = result.ToString();
             result = 0;
             operand = "";
@@ -95,24 +109,19 @@ namespace Calculator_113
         {
             if (!operandPerformed && !txtResult.Text.Contains(","))
             {
-                txtResult.Text += ",";
+                txtResult.Text += ".";
             }
             else if (operandPerformed)
             {
                 txtResult.Text = "0";
             }
 
-            if (!txtResult.Text.Contains(","))
+            if (!txtResult.Text.Contains("."))
             {
-                txtResult.Text += ",";
+                txtResult.Text += ".";
             }
 
             operandPerformed = false;
-        }
-
-        private void bEq_KeyPress(object sender, KeyPressEventArgs e)
-        {
-
         }
     }
 }
