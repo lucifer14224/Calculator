@@ -265,7 +265,6 @@ namespace Calculator_113
             this.bEq.Text = "=";
             this.bEq.UseVisualStyleBackColor = false;
             this.bEq.Click += new System.EventHandler(this.bEq_Click);
-            this.bEq.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.bEq_KeyPress);
             // 
             // Form1
             // 
@@ -294,7 +293,6 @@ namespace Calculator_113
             this.Controls.Add(this.b7);
             this.Name = "Form1";
             this.Text = "Calculator";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
